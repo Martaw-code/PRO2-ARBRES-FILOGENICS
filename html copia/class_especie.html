@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica Pro2: Generador d&#39;arbres de filogenétics: Referencia de la Clase Especie</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica Pro2: Generador d&#39;arbres de filogenétics
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-static-methods">Métodos públicos estáticos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#pri-static-attribs">Atributos privados estáticos</a> &#124;
+<a href="class_especie-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase Especie</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Representa una espècie al nostre arbre filogènic. Conté operacions per crear una espècie per defecte o amb un gen i un identificador, o identificador. També per comporvar si existeix una espècie, calular els k-mers, i també calcula les distàncies entre dues espècies diferents. També podem obtenir el gen, i l'identificador d'una espècie, com així també consultar els k-mer's. I ens llegeix i i escriu (resp) l'identificador i el gen i ens retorna el gen de l'espècie.  
+ <a href="class_especie.html#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a272c2488719cc9874b2f174906675b3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a272c2488719cc9874b2f174906675b3d">Especie</a> ()</td></tr>
+<tr class="memdesc:a272c2488719cc9874b2f174906675b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructora per defecte.  <a href="class_especie.html#a272c2488719cc9874b2f174906675b3d">Más...</a><br /></td></tr>
+<tr class="separator:a272c2488719cc9874b2f174906675b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a4057b0119c2f3bc78e6c0614310e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a09a4057b0119c2f3bc78e6c0614310e4">Especie</a> (string &amp;identifcador, string &amp;<a class="el" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">gen</a>)</td></tr>
+<tr class="memdesc:a09a4057b0119c2f3bc78e6c0614310e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructora que retornarà una espècie amb un identificador i un gen.  <a href="class_especie.html#a09a4057b0119c2f3bc78e6c0614310e4">Más...</a><br /></td></tr>
+<tr class="separator:a09a4057b0119c2f3bc78e6c0614310e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1082411c5dc4c2e7b94374aab160856e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a1082411c5dc4c2e7b94374aab160856e">Especie</a> (string &amp;<a class="el" href="class_especie.html#a9efba6a1733042dab5c3cb63533e0628">identificador</a>)</td></tr>
+<tr class="memdesc:a1082411c5dc4c2e7b94374aab160856e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructora que retornarà una espècie amb un identificador.  <a href="class_especie.html#a1082411c5dc4c2e7b94374aab160856e">Más...</a><br /></td></tr>
+<tr class="separator:a1082411c5dc4c2e7b94374aab160856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd21378dde6e8348d823c6f87a1c0658"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#abd21378dde6e8348d823c6f87a1c0658">~Especie</a> ()</td></tr>
+<tr class="memdesc:abd21378dde6e8348d823c6f87a1c0658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Esborra automaticament els objectes locals en sortir d'un ambit de visibilitat, és la destructora per defecte d'espècie <br  />
+  <a href="class_especie.html#abd21378dde6e8348d823c6f87a1c0658">Más...</a><br /></td></tr>
+<tr class="separator:abd21378dde6e8348d823c6f87a1c0658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3b05a72ef7d1b018b00eb3730ec3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a9f3b05a72ef7d1b018b00eb3730ec3d9">conjsub_kmers</a> ()</td></tr>
+<tr class="memdesc:a9f3b05a72ef7d1b018b00eb3730ec3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcularem els kmer's, és a dir el conjunt de kmer(gen,k) que correspondrà a un instància de la classe. Els k-mers seran el conjunt de las subseqüències contigues del gen de longitud k (los k-mers del gen)  <a href="class_especie.html#a9f3b05a72ef7d1b018b00eb3730ec3d9">Más...</a><br /></td></tr>
+<tr class="separator:a9f3b05a72ef7d1b018b00eb3730ec3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0745a33a8bb057e204aea54c05066282"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a0745a33a8bb057e204aea54c05066282">obtenir_gen</a> ()</td></tr>
+<tr class="memdesc:a0745a33a8bb057e204aea54c05066282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtenim el gen associat a una espècie.  <a href="class_especie.html#a0745a33a8bb057e204aea54c05066282">Más...</a><br /></td></tr>
+<tr class="separator:a0745a33a8bb057e204aea54c05066282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bffa9ee941a59d42e6fcf04b56e0b1a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a3bffa9ee941a59d42e6fcf04b56e0b1a">consultar_identificador</a> ()</td></tr>
+<tr class="memdesc:a3bffa9ee941a59d42e6fcf04b56e0b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtenim l'identificador associat a una espècie.  <a href="class_especie.html#a3bffa9ee941a59d42e6fcf04b56e0b1a">Más...</a><br /></td></tr>
+<tr class="separator:a3bffa9ee941a59d42e6fcf04b56e0b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7384add391d2684c4fb6bdf8a535fba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a7384add391d2684c4fb6bdf8a535fba3">llegir</a> ()</td></tr>
+<tr class="memdesc:a7384add391d2684c4fb6bdf8a535fba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operació de lectura d'una espècie.  <a href="class_especie.html#a7384add391d2684c4fb6bdf8a535fba3">Más...</a><br /></td></tr>
+<tr class="separator:a7384add391d2684c4fb6bdf8a535fba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24802ae0746b2560a48eea40f64760e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#ae24802ae0746b2560a48eea40f64760e">escriure</a> () const</td></tr>
+<tr class="memdesc:ae24802ae0746b2560a48eea40f64760e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operació d'escriptura d'una espècie.  <a href="class_especie.html#ae24802ae0746b2560a48eea40f64760e">Más...</a><br /></td></tr>
+<tr class="separator:ae24802ae0746b2560a48eea40f64760e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Métodos públicos estáticos</h2></td></tr>
+<tr class="memitem:a86e868ba38ebe41cec502cb9c99bcbf6"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a86e868ba38ebe41cec502cb9c99bcbf6">calcular_distancies</a> (<a class="el" href="class_especie.html">Especie</a> especie, <a class="el" href="class_especie.html">Especie</a> especie1)</td></tr>
+<tr class="memdesc:a86e868ba38ebe41cec502cb9c99bcbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcularem la distància entre un parell d'espècies al nostre arbre filogènic Posarem la distància com a static, perquè l'usarem al llarg de tot el programa en les diverses classes.  <a href="class_especie.html#a86e868ba38ebe41cec502cb9c99bcbf6">Más...</a><br /></td></tr>
+<tr class="separator:a86e868ba38ebe41cec502cb9c99bcbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2995f95394402ef632e72ffd9fc4843c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a2995f95394402ef632e72ffd9fc4843c">longitud_k</a> (int long_k)</td></tr>
+<tr class="memdesc:a2995f95394402ef632e72ffd9fc4843c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Podem assiganar el valor de la constant k, que és la longitud d'una subseqüencia del kmer a totes les instàncies d'espècie.  <a href="class_especie.html#a2995f95394402ef632e72ffd9fc4843c">Más...</a><br /></td></tr>
+<tr class="separator:a2995f95394402ef632e72ffd9fc4843c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:ac35bb565f7346cd6317b3a8c849456d1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">gen</a></td></tr>
+<tr class="memdesc:ac35bb565f7346cd6317b3a8c849456d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">És el gen que estarà associat a l'espècie.  <a href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">Más...</a><br /></td></tr>
+<tr class="separator:ac35bb565f7346cd6317b3a8c849456d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6740db160f2d7335a98fa8d9f745cbe"><td class="memItemLeft" align="right" valign="top">map&lt; string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#ab6740db160f2d7335a98fa8d9f745cbe">kmer</a></td></tr>
+<tr class="memdesc:ab6740db160f2d7335a98fa8d9f745cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aquí tenim la seqüencia dels k-mers on un k-mer és kmer(g,k) on g és una seqüència d'ADN i k és la long. de les sub seqüències del gen.  <a href="class_especie.html#ab6740db160f2d7335a98fa8d9f745cbe">Más...</a><br /></td></tr>
+<tr class="separator:ab6740db160f2d7335a98fa8d9f745cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efba6a1733042dab5c3cb63533e0628"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a9efba6a1733042dab5c3cb63533e0628">identificador</a></td></tr>
+<tr class="memdesc:a9efba6a1733042dab5c3cb63533e0628"><td class="mdescLeft">&#160;</td><td class="mdescRight">És l'dentificador que estarà associat a l'espècie.  <a href="class_especie.html#a9efba6a1733042dab5c3cb63533e0628">Más...</a><br /></td></tr>
+<tr class="separator:a9efba6a1733042dab5c3cb63533e0628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Atributos privados estáticos</h2></td></tr>
+<tr class="memitem:a592c0ddeeebc786969f3040fbefea9df"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html#a592c0ddeeebc786969f3040fbefea9df">k</a></td></tr>
+<tr class="memdesc:a592c0ddeeebc786969f3040fbefea9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">És la longitud, que li direm k on k &gt; 0, de les subseqüencies de la seqüència que representa el gen.  <a href="class_especie.html#a592c0ddeeebc786969f3040fbefea9df">Más...</a><br /></td></tr>
+<tr class="separator:a592c0ddeeebc786969f3040fbefea9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Representa una espècie al nostre arbre filogènic. Conté operacions per crear una espècie per defecte o amb un gen i un identificador, o identificador. També per comporvar si existeix una espècie, calular els k-mers, i també calcula les distàncies entre dues espècies diferents. També podem obtenir el gen, i l'identificador d'una espècie, com així també consultar els k-mer's. I ens llegeix i i escriu (resp) l'identificador i el gen i ens retorna el gen de l'espècie. </p>
+<p>CLASSE ESPÈCIE </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_especie_8hh_source.html#l00026">26</a> del archivo <a class="el" href="_especie_8hh_source.html">Especie.hh</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a id="a272c2488719cc9874b2f174906675b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272c2488719cc9874b2f174906675b3d">&#9670;&nbsp;</a></span>Especie() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Especie::Especie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructora per defecte. </p>
+<p>S'executa automàticament al declarar una espècie </p><dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és una espècie Time Complexity: O(1) </dd></dl>
+
+</div>
+</div>
+<a id="a09a4057b0119c2f3bc78e6c0614310e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a4057b0119c2f3bc78e6c0614310e4">&#9670;&nbsp;</a></span>Especie() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Especie::Especie </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>identifcador</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>gen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructora que retornarà una espècie amb un identificador i un gen. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és una espècie amb un identificador i un gen associat </dd></dl>
+
+</div>
+</div>
+<a id="a1082411c5dc4c2e7b94374aab160856e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1082411c5dc4c2e7b94374aab160856e">&#9670;&nbsp;</a></span>Especie() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Especie::Especie </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>identificador</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructora que retornarà una espècie amb un identificador. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert, és una espècie que no té un identificador associat</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és una espècie amb un identificador </dd></dl>
+
+</div>
+</div>
+<a id="abd21378dde6e8348d823c6f87a1c0658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd21378dde6e8348d823c6f87a1c0658">&#9670;&nbsp;</a></span>~Especie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Especie::~Especie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Esborra automaticament els objectes locals en sortir d'un ambit de visibilitat, és la destructora per defecte d'espècie <br  />
+ </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="a9f3b05a72ef7d1b018b00eb3730ec3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3b05a72ef7d1b018b00eb3730ec3d9">&#9670;&nbsp;</a></span>conjsub_kmers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Especie::conjsub_kmers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcularem els kmer's, és a dir el conjunt de kmer(gen,k) que correspondrà a un instància de la classe. Els k-mers seran el conjunt de las subseqüències contigues del gen de longitud k (los k-mers del gen) </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> Cada espècie li assiganrem un gen, del qual farem els kmer(gen,k) de longitd k </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat serà el conjunt de kmer's d'una seqüència d'ADN. </dd></dl>
+
+</div>
+</div>
+<a id="a86e868ba38ebe41cec502cb9c99bcbf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e868ba38ebe41cec502cb9c99bcbf6">&#9670;&nbsp;</a></span>calcular_distancies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Especie::calcular_distancies </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_especie.html">Especie</a>&#160;</td>
+          <td class="paramname"><em>especie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_especie.html">Especie</a>&#160;</td>
+          <td class="paramname"><em>especie1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcularem la distància entre un parell d'espècies al nostre arbre filogènic Posarem la distància com a static, perquè l'usarem al llarg de tot el programa en les diverses classes. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> Ambdues espècies tindran tant un identificador vàlid, com un gen associat vàlid </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat serà la distància entre dues espècies de l'arbre. </dd></dl>
+
+</div>
+</div>
+<a id="a2995f95394402ef632e72ffd9fc4843c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2995f95394402ef632e72ffd9fc4843c">&#9670;&nbsp;</a></span>longitud_k()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Especie::longitud_k </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>long_k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Podem assiganar el valor de la constant k, que és la longitud d'una subseqüencia del kmer a totes les instàncies d'espècie. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Assignem a totes les instàncies d'espècie una longitud de cada subseqüència i li diem long_k </dd></dl>
+
+</div>
+</div>
+<a id="a0745a33a8bb057e204aea54c05066282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0745a33a8bb057e204aea54c05066282">&#9670;&nbsp;</a></span>obtenir_gen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Especie::obtenir_gen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtenim el gen associat a una espècie. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és el gen del p.i, que és l'espècie </dd></dl>
+
+</div>
+</div>
+<a id="a3bffa9ee941a59d42e6fcf04b56e0b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bffa9ee941a59d42e6fcf04b56e0b1a">&#9670;&nbsp;</a></span>consultar_identificador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Especie::consultar_identificador </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtenim l'identificador associat a una espècie. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és l'dentificador del p.i de l'espècie </dd></dl>
+
+</div>
+</div>
+<a id="a7384add391d2684c4fb6bdf8a535fba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7384add391d2684c4fb6bdf8a535fba3">&#9670;&nbsp;</a></span>llegir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Especie::llegir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Operació de lectura d'una espècie. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> Hi ha preparat al canal estàndard d'entrada un identificador i un gen que són dos strings </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El paràmetre implícit contindrà l'identifcador i el gen </dd></dl>
+
+</div>
+</div>
+<a id="ae24802ae0746b2560a48eea40f64760e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24802ae0746b2560a48eea40f64760e">&#9670;&nbsp;</a></span>escriure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Especie::escriure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Operació d'escriptura d'una espècie. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Escriurem pel canal de sortida estàndard, el gen associat a l'espècie </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a id="ac35bb565f7346cd6317b3a8c849456d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35bb565f7346cd6317b3a8c849456d1">&#9670;&nbsp;</a></span>gen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Especie::gen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>És el gen que estarà associat a l'espècie. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_especie_8hh_source.html#l00030">30</a> del archivo <a class="el" href="_especie_8hh_source.html">Especie.hh</a>.</p>
+
+</div>
+</div>
+<a id="a592c0ddeeebc786969f3040fbefea9df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592c0ddeeebc786969f3040fbefea9df">&#9670;&nbsp;</a></span>k</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Especie::k</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>És la longitud, que li direm k on k &gt; 0, de les subseqüencies de la seqüència que representa el gen. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_especie_8hh_source.html#l00033">33</a> del archivo <a class="el" href="_especie_8hh_source.html">Especie.hh</a>.</p>
+
+</div>
+</div>
+<a id="ab6740db160f2d7335a98fa8d9f745cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6740db160f2d7335a98fa8d9f745cbe">&#9670;&nbsp;</a></span>kmer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,int&gt; Especie::kmer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aquí tenim la seqüencia dels k-mers on un k-mer és kmer(g,k) on g és una seqüència d'ADN i k és la long. de les sub seqüències del gen. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_especie_8hh_source.html#l00036">36</a> del archivo <a class="el" href="_especie_8hh_source.html">Especie.hh</a>.</p>
+
+</div>
+</div>
+<a id="a9efba6a1733042dab5c3cb63533e0628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efba6a1733042dab5c3cb63533e0628">&#9670;&nbsp;</a></span>identificador</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Especie::identificador</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>És l'dentificador que estarà associat a l'espècie. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_especie_8hh_source.html#l00039">39</a> del archivo <a class="el" href="_especie_8hh_source.html">Especie.hh</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li><a class="el" href="_especie_8hh_source.html">Especie.hh</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

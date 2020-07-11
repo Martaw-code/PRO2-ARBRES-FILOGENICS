@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica Pro2: Generador d&#39;arbres de filogenétics: Fichero Fuente Cjt_Especies.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica Pro2: Generador d&#39;arbres de filogenétics
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0f66f216a97f34122ef86d04fe9bc051.html">Nueva carpeta (2)</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_Especies.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt___especies_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef Cjt_Especies_hh // Així evitem errors de compilat cada vegada que l&#39;incloem moltes vegades</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define Cjt_Especies_hh</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM // El Doxyfile no inclou les clases en els diagrames modulars, nogensmenys el compilador c++ sí</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_especie_8hh.html">Especie.hh</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt___clusters_8hh.html">Cjt_Clusters.hh</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_cjt___especies.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt___especies.html">Cjt_Especies</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#a1afc15f45c62890a60aa13974cad5340">   32</a></span>&#160;    map&lt;string,Especie&gt; <a class="code" href="class_cjt___especies.html#a1afc15f45c62890a60aa13974cad5340">Conjunt_esp</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#a2b92045f333197afacbe04454a62f58a">   34</a></span>&#160;    map&lt;string,map&lt;string,double&gt; &gt; <a class="code" href="class_cjt___especies.html#a2b92045f333197afacbe04454a62f58a">Taula_Distancies</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_cjt___especies.html#adbbd2a687004f031d483149922dbe7eb">   36</a></span>&#160;    map &lt;string,bool&gt; <a class="code" href="class_cjt___especies.html#adbbd2a687004f031d483149922dbe7eb">Canvis_Taules</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//Constructora</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_cjt___especies.html">Cjt_Especies</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//Destructora</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ~<a class="code" href="class_cjt___especies.html">Cjt_Especies</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//Modificadores</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> afegir_especie(<a class="code" href="class_especie.html">Especie</a>&amp; especie);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> eliminar_especie(<span class="keywordtype">string</span>&amp; identificador);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//Modificadores Taula de Distàncies</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordtype">void</span> inicialitzar_Taula_Distancies_C(<a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a>&amp; ConjClust);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <span class="comment">//Modificadores Clúster</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;     <span class="keywordtype">void</span> inicialitzar_clusters(<a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a>&amp; ConjClust);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//Consultores</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> existeix_especie(<span class="keywordtype">string</span>&amp; identificador);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">//Consultores</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="class_especie.html">Especie</a> consultar_Especie(<span class="keywordtype">string</span>&amp; identificador);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//Modificadores Taula de Distàncies</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> afegir_Taula_Distancies(<span class="keywordtype">string</span> identificador);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">//Modificadores Taula de Distàncies</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;     </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> borrar_Taula_Distancies(<span class="keywordtype">string</span> identificador);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//Modificadores Taula de Distàncies</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> actualitzar_Taula_Distancies();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">//Lectura</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> llegir_conjunt_especies(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">//Escriptura</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> escriure_cjt_especies() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">//Escriptura Taula De Distàncies</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> escriure_Taula_Distancies();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* Cjt_Especies_hh */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_cjt___especies_html_a1afc15f45c62890a60aa13974cad5340"><div class="ttname"><a href="class_cjt___especies.html#a1afc15f45c62890a60aa13974cad5340">Cjt_Especies::Conjunt_esp</a></div><div class="ttdeci">map&lt; string, Especie &gt; Conjunt_esp</div><div class="ttdoc">Tenim un conjunt d'espècies, ordenat segons l'identificador de cada espècie i la corresponent Espècie...</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00032">Cjt_Especies.hh:32</a></div></div>
+<div class="ttc" id="aclass_especie_html"><div class="ttname"><a href="class_especie.html">Especie</a></div><div class="ttdoc">Representa una espècie al nostre arbre filogènic. Conté operacions per crear una espècie per defecte ...</div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00026">Especie.hh:26</a></div></div>
+<div class="ttc" id="aclass_cjt___especies_html"><div class="ttname"><a href="class_cjt___especies.html">Cjt_Especies</a></div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00027">Cjt_Especies.hh:27</a></div></div>
+<div class="ttc" id="aclass_cjt___especies_html_adbbd2a687004f031d483149922dbe7eb"><div class="ttname"><a href="class_cjt___especies.html#adbbd2a687004f031d483149922dbe7eb">Cjt_Especies::Canvis_Taules</a></div><div class="ttdeci">map&lt; string, bool &gt; Canvis_Taules</div><div class="ttdoc">Tindrem un map que ens servirà de registre per actualitzar la Taula de distàncies,...</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00036">Cjt_Especies.hh:36</a></div></div>
+<div class="ttc" id="aclass_cjt___clusters_html"><div class="ttname"><a href="class_cjt___clusters.html">Cjt_Clusters</a></div><div class="ttdoc">Representa un conjunt de clústers al nostre arbre filogènic. Conté operacions per inicialitzar clúste...</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___clusters_8hh_source.html#l00025">Cjt_Clusters.hh:25</a></div></div>
+<div class="ttc" id="a_especie_8hh_html"><div class="ttname"><a href="_especie_8hh.html">Especie.hh</a></div><div class="ttdoc">Especificació de la classe Especie.</div></div>
+<div class="ttc" id="aclass_cjt___especies_html_a2b92045f333197afacbe04454a62f58a"><div class="ttname"><a href="class_cjt___especies.html#a2b92045f333197afacbe04454a62f58a">Cjt_Especies::Taula_Distancies</a></div><div class="ttdeci">map&lt; string, map&lt; string, double &gt; &gt; Taula_Distancies</div><div class="ttdoc">Tindrem un map de maps, que contindrà la Taula de les distàncies i emmagatzemarem les distàncies d'un...</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00034">Cjt_Especies.hh:34</a></div></div>
+<div class="ttc" id="a_cjt___clusters_8hh_html"><div class="ttname"><a href="_cjt___clusters_8hh.html">Cjt_Clusters.hh</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

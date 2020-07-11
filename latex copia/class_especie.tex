@@ -1,0 +1,300 @@
+\hypertarget{class_especie}{}\doxysection{Referencia de la Clase Especie}
+\label{class_especie}\index{Especie@{Especie}}
+
+
+Representa una espècie al nostre arbre filogènic. Conté operacions per crear una espècie per defecte o amb un gen i un identificador, o identificador. També per comporvar si existeix una espècie, calular els k-\/mers, i també calcula les distàncies entre dues espècies diferents. També podem obtenir el gen, i l\textquotesingle{}identificador d\textquotesingle{}una espècie, com així també consultar els k-\/mer\textquotesingle{}s. I ens llegeix i i escriu (resp) l\textquotesingle{}identificador i el gen i ens retorna el gen de l\textquotesingle{}espècie.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_especie_a272c2488719cc9874b2f174906675b3d}{Especie}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_especie_a09a4057b0119c2f3bc78e6c0614310e4}{Especie}} (string \&identifcador, string \&\mbox{\hyperlink{class_especie_ac35bb565f7346cd6317b3a8c849456d1}{gen}})
+\begin{DoxyCompactList}\small\item\em Constructora que retornarà una espècie amb un identificador i un gen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_especie_a1082411c5dc4c2e7b94374aab160856e}{Especie}} (string \&\mbox{\hyperlink{class_especie_a9efba6a1733042dab5c3cb63533e0628}{identificador}})
+\begin{DoxyCompactList}\small\item\em Constructora que retornarà una espècie amb un identificador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_especie_abd21378dde6e8348d823c6f87a1c0658}{$\sim$\+Especie}} ()
+\begin{DoxyCompactList}\small\item\em Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat, és la destructora per defecte d\textquotesingle{}espècie ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_especie_a9f3b05a72ef7d1b018b00eb3730ec3d9}{conjsub\+\_\+kmers}} ()
+\begin{DoxyCompactList}\small\item\em Calcularem els kmer\textquotesingle{}s, és a dir el conjunt de kmer(gen,k) que correspondrà a un instància de la classe. Els k-\/mers seran el conjunt de las subseqüències contigues del gen de longitud k (los k-\/mers del gen) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_especie_a0745a33a8bb057e204aea54c05066282}{obtenir\+\_\+gen}} ()
+\begin{DoxyCompactList}\small\item\em Obtenim el gen associat a una espècie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_especie_a3bffa9ee941a59d42e6fcf04b56e0b1a}{consultar\+\_\+identificador}} ()
+\begin{DoxyCompactList}\small\item\em Obtenim l\textquotesingle{}identificador associat a una espècie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_especie_a7384add391d2684c4fb6bdf8a535fba3}{llegir}} ()
+\begin{DoxyCompactList}\small\item\em Operació de lectura d\textquotesingle{}una espècie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_especie_ae24802ae0746b2560a48eea40f64760e}{escriure}} () const
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura d\textquotesingle{}una espècie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_especie_a86e868ba38ebe41cec502cb9c99bcbf6}{calcular\+\_\+distancies}} (\mbox{\hyperlink{class_especie}{Especie}} especie, \mbox{\hyperlink{class_especie}{Especie}} especie1)
+\begin{DoxyCompactList}\small\item\em Calcularem la distància entre un parell d\textquotesingle{}espècies al nostre arbre filogènic Posarem la distància com a static, perquè l\textquotesingle{}usarem al llarg de tot el programa en les diverses classes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_especie_a2995f95394402ef632e72ffd9fc4843c}{longitud\+\_\+k}} (int long\+\_\+k)
+\begin{DoxyCompactList}\small\item\em Podem assiganar el valor de la constant k, que és la longitud d\textquotesingle{}una subseqüencia del kmer a totes les instàncies d\textquotesingle{}espècie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_especie_ac35bb565f7346cd6317b3a8c849456d1}{gen}}
+\begin{DoxyCompactList}\small\item\em És el gen que estarà associat a l\textquotesingle{}espècie. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ \mbox{\hyperlink{class_especie_ab6740db160f2d7335a98fa8d9f745cbe}{kmer}}
+\begin{DoxyCompactList}\small\item\em Aquí tenim la seqüencia dels k-\/mers on un k-\/mer és kmer(g,k) on g és una seqüència d\textquotesingle{}A\+DN i k és la long. de les sub seqüències del gen. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_especie_a9efba6a1733042dab5c3cb63533e0628}{identificador}}
+\begin{DoxyCompactList}\small\item\em És l\textquotesingle{}dentificador que estarà associat a l\textquotesingle{}espècie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_especie_a592c0ddeeebc786969f3040fbefea9df}{k}}
+\begin{DoxyCompactList}\small\item\em És la longitud, que li direm k on k $>$ 0, de les subseqüencies de la seqüència que representa el gen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa una espècie al nostre arbre filogènic. Conté operacions per crear una espècie per defecte o amb un gen i un identificador, o identificador. També per comporvar si existeix una espècie, calular els k-\/mers, i també calcula les distàncies entre dues espècies diferents. També podem obtenir el gen, i l\textquotesingle{}identificador d\textquotesingle{}una espècie, com així també consultar els k-\/mer\textquotesingle{}s. I ens llegeix i i escriu (resp) l\textquotesingle{}identificador i el gen i ens retorna el gen de l\textquotesingle{}espècie. 
+
+C\+L\+A\+S\+SE E\+S\+PÈ\+C\+IE 
+
+Definición en la línea 26 del archivo Especie.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_especie_a272c2488719cc9874b2f174906675b3d}\label{class_especie_a272c2488719cc9874b2f174906675b3d}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Especie()}{Especie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+S\textquotesingle{}executa automàticament al declarar una espècie \begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és una espècie Time Complexity\+: O(1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a09a4057b0119c2f3bc78e6c0614310e4}\label{class_especie_a09a4057b0119c2f3bc78e6c0614310e4}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Especie()}{Especie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}\item[{string \&}]{identifcador,  }\item[{string \&}]{gen }\end{DoxyParamCaption})}
+
+
+
+Constructora que retornarà una espècie amb un identificador i un gen. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és una espècie amb un identificador i un gen associat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a1082411c5dc4c2e7b94374aab160856e}\label{class_especie_a1082411c5dc4c2e7b94374aab160856e}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Especie()}{Especie()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}\item[{string \&}]{identificador }\end{DoxyParamCaption})}
+
+
+
+Constructora que retornarà una espècie amb un identificador. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert, és una espècie que no té un identificador associat} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és una espècie amb un identificador 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_abd21378dde6e8348d823c6f87a1c0658}\label{class_especie_abd21378dde6e8348d823c6f87a1c0658}} 
+\index{Especie@{Especie}!````~Especie@{$\sim$Especie}}
+\index{````~Especie@{$\sim$Especie}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{$\sim$Especie()}{~Especie()}}
+{\footnotesize\ttfamily Especie\+::$\sim$\+Especie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat, és la destructora per defecte d\textquotesingle{}espècie ~\newline
+ 
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_especie_a9f3b05a72ef7d1b018b00eb3730ec3d9}\label{class_especie_a9f3b05a72ef7d1b018b00eb3730ec3d9}} 
+\index{Especie@{Especie}!conjsub\_kmers@{conjsub\_kmers}}
+\index{conjsub\_kmers@{conjsub\_kmers}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{conjsub\_kmers()}{conjsub\_kmers()}}
+{\footnotesize\ttfamily void Especie\+::conjsub\+\_\+kmers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcularem els kmer\textquotesingle{}s, és a dir el conjunt de kmer(gen,k) que correspondrà a un instància de la classe. Els k-\/mers seran el conjunt de las subseqüències contigues del gen de longitud k (los k-\/mers del gen) 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Cada espècie li assiganrem un gen, del qual farem els kmer(gen,k) de longitd k } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat serà el conjunt de kmer\textquotesingle{}s d\textquotesingle{}una seqüència d\textquotesingle{}A\+DN. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a86e868ba38ebe41cec502cb9c99bcbf6}\label{class_especie_a86e868ba38ebe41cec502cb9c99bcbf6}} 
+\index{Especie@{Especie}!calcular\_distancies@{calcular\_distancies}}
+\index{calcular\_distancies@{calcular\_distancies}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{calcular\_distancies()}{calcular\_distancies()}}
+{\footnotesize\ttfamily static double Especie\+::calcular\+\_\+distancies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_especie}{Especie}}}]{especie,  }\item[{\mbox{\hyperlink{class_especie}{Especie}}}]{especie1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calcularem la distància entre un parell d\textquotesingle{}espècies al nostre arbre filogènic Posarem la distància com a static, perquè l\textquotesingle{}usarem al llarg de tot el programa en les diverses classes. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Ambdues espècies tindran tant un identificador vàlid, com un gen associat vàlid } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat serà la distància entre dues espècies de l\textquotesingle{}arbre. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a2995f95394402ef632e72ffd9fc4843c}\label{class_especie_a2995f95394402ef632e72ffd9fc4843c}} 
+\index{Especie@{Especie}!longitud\_k@{longitud\_k}}
+\index{longitud\_k@{longitud\_k}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{longitud\_k()}{longitud\_k()}}
+{\footnotesize\ttfamily static void Especie\+::longitud\+\_\+k (\begin{DoxyParamCaption}\item[{int}]{long\+\_\+k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Podem assiganar el valor de la constant k, que és la longitud d\textquotesingle{}una subseqüencia del kmer a totes les instàncies d\textquotesingle{}espècie. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Assignem a totes les instàncies d\textquotesingle{}espècie una longitud de cada subseqüència i li diem long\+\_\+k 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a0745a33a8bb057e204aea54c05066282}\label{class_especie_a0745a33a8bb057e204aea54c05066282}} 
+\index{Especie@{Especie}!obtenir\_gen@{obtenir\_gen}}
+\index{obtenir\_gen@{obtenir\_gen}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{obtenir\_gen()}{obtenir\_gen()}}
+{\footnotesize\ttfamily string Especie\+::obtenir\+\_\+gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtenim el gen associat a una espècie. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és el gen del p.\+i, que és l\textquotesingle{}espècie 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a3bffa9ee941a59d42e6fcf04b56e0b1a}\label{class_especie_a3bffa9ee941a59d42e6fcf04b56e0b1a}} 
+\index{Especie@{Especie}!consultar\_identificador@{consultar\_identificador}}
+\index{consultar\_identificador@{consultar\_identificador}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{consultar\_identificador()}{consultar\_identificador()}}
+{\footnotesize\ttfamily string Especie\+::consultar\+\_\+identificador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtenim l\textquotesingle{}identificador associat a una espècie. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és l\textquotesingle{}dentificador del p.\+i de l\textquotesingle{}espècie 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a7384add391d2684c4fb6bdf8a535fba3}\label{class_especie_a7384add391d2684c4fb6bdf8a535fba3}} 
+\index{Especie@{Especie}!llegir@{llegir}}
+\index{llegir@{llegir}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{llegir()}{llegir()}}
+{\footnotesize\ttfamily void Especie\+::llegir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operació de lectura d\textquotesingle{}una espècie. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Hi ha preparat al canal estàndard d\textquotesingle{}entrada un identificador i un gen que són dos strings } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El paràmetre implícit contindrà l\textquotesingle{}identifcador i el gen 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_ae24802ae0746b2560a48eea40f64760e}\label{class_especie_ae24802ae0746b2560a48eea40f64760e}} 
+\index{Especie@{Especie}!escriure@{escriure}}
+\index{escriure@{escriure}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{escriure()}{escriure()}}
+{\footnotesize\ttfamily void Especie\+::escriure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operació d\textquotesingle{}escriptura d\textquotesingle{}una espècie. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escriurem pel canal de sortida estàndard, el gen associat a l\textquotesingle{}espècie 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_especie_ac35bb565f7346cd6317b3a8c849456d1}\label{class_especie_ac35bb565f7346cd6317b3a8c849456d1}} 
+\index{Especie@{Especie}!gen@{gen}}
+\index{gen@{gen}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{gen}{gen}}
+{\footnotesize\ttfamily string Especie\+::gen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+És el gen que estarà associat a l\textquotesingle{}espècie. 
+
+
+
+Definición en la línea 30 del archivo Especie.\+hh.
+
+\mbox{\Hypertarget{class_especie_a592c0ddeeebc786969f3040fbefea9df}\label{class_especie_a592c0ddeeebc786969f3040fbefea9df}} 
+\index{Especie@{Especie}!k@{k}}
+\index{k@{k}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily int Especie\+::k\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+És la longitud, que li direm k on k $>$ 0, de les subseqüencies de la seqüència que representa el gen. 
+
+
+
+Definición en la línea 33 del archivo Especie.\+hh.
+
+\mbox{\Hypertarget{class_especie_ab6740db160f2d7335a98fa8d9f745cbe}\label{class_especie_ab6740db160f2d7335a98fa8d9f745cbe}} 
+\index{Especie@{Especie}!kmer@{kmer}}
+\index{kmer@{kmer}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{kmer}{kmer}}
+{\footnotesize\ttfamily map$<$string,int$>$ Especie\+::kmer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aquí tenim la seqüencia dels k-\/mers on un k-\/mer és kmer(g,k) on g és una seqüència d\textquotesingle{}A\+DN i k és la long. de les sub seqüències del gen. 
+
+
+
+Definición en la línea 36 del archivo Especie.\+hh.
+
+\mbox{\Hypertarget{class_especie_a9efba6a1733042dab5c3cb63533e0628}\label{class_especie_a9efba6a1733042dab5c3cb63533e0628}} 
+\index{Especie@{Especie}!identificador@{identificador}}
+\index{identificador@{identificador}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{identificador}{identificador}}
+{\footnotesize\ttfamily string Especie\+::identificador\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+És l\textquotesingle{}dentificador que estarà associat a l\textquotesingle{}espècie. 
+
+
+
+Definición en la línea 39 del archivo Especie.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_especie_8hh}{Especie.\+hh}}\end{DoxyCompactItemize}

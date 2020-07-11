@@ -1,0 +1,168 @@
+\hypertarget{class_cluster}{}\doxysection{Referencia de la Clase Cluster}
+\label{class_cluster}\index{Cluster@{Cluster}}
+
+
+Representa un cluster al nostre arbre filogènic. Conté operacions per.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}{Cluster}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cluster_a4bddfc88ac859610acab15dd12851b58}{$\sim$\+Cluster}} ()
+\begin{DoxyCompactList}\small\item\em Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat, és a dir és la destructora per defecte de la classe \mbox{\hyperlink{class_cluster}{Cluster}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cluster_acd122ad5eb4d0b403ebe565c993047f2}{Cluster}} (string identificador, double dist\+Clust)
+\begin{DoxyCompactList}\small\item\em És la constructora d\textquotesingle{}un clúster amb la distància i els identificadors dels seus fills. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cluster_aabe58870580df673e0a358958da17edb}{Cluster}} (const Bin\+Tree$<$ pair$<$ string, double $>$ $>$ \&\mbox{\hyperlink{class_cluster_a0562603ece48e7c4daf8404ad7118e8b}{Ccluster}})
+\begin{DoxyCompactList}\small\item\em És la constructora d\textquotesingle{}un clúster a partir del Bin\+Tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cluster_a6a3ccf12d448810cc35f242f7f918ede}{Cluster}} (string identificador, double dist\+Clust, const Bin\+Tree$<$ pair$<$ string, double $>$ $>$ \&esquerra, const Bin\+Tree$<$ pair$<$ string, double $>$ $>$ \&dreta)
+\begin{DoxyCompactList}\small\item\em És la constructora d\textquotesingle{}un clúster a partir del Bin\+Tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cluster_adc079d1c392e2321752b8626d701e2c2}{Cluster}} (pair$<$ string, double $>$ \&tmp, const \mbox{\hyperlink{class_cluster}{Cluster}} \&Clust1, const \mbox{\hyperlink{class_cluster}{Cluster}} \&Clust2)
+\begin{DoxyCompactList}\small\item\em És la constructora d\textquotesingle{}un clúster. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cluster_ad71aee52f66b225eb1a2d962e328bb4d}{escriure\+\_\+cluster}} () const
+\begin{DoxyCompactList}\small\item\em Imprimeix el contingut d\textquotesingle{}un Clúster. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ pair$<$ string, double $>$ $>$ \mbox{\hyperlink{class_cluster_a0562603ece48e7c4daf8404ad7118e8b}{Ccluster}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un cluster al nostre arbre filogènic. Conté operacions per. 
+
+C\+L\+A\+S\+SE C\+LÚ\+S\+T\+ER 
+
+Definición en la línea 23 del archivo Cluster.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}\label{class_cluster_aee7feb1d599d4c8fda6c3ee83e86ba81}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+S\textquotesingle{}executa automàticament al declarar un conjunt de Clústers \begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un clúster buit. \textbackslash{} Time Complexity\+: O(1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_a4bddfc88ac859610acab15dd12851b58}\label{class_cluster_a4bddfc88ac859610acab15dd12851b58}} 
+\index{Cluster@{Cluster}!````~Cluster@{$\sim$Cluster}}
+\index{````~Cluster@{$\sim$Cluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cluster()}{~Cluster()}}
+{\footnotesize\ttfamily Cluster\+::$\sim$\+Cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat, és a dir és la destructora per defecte de la classe \mbox{\hyperlink{class_cluster}{Cluster}}. 
+
+\mbox{\Hypertarget{class_cluster_acd122ad5eb4d0b403ebe565c993047f2}\label{class_cluster_acd122ad5eb4d0b403ebe565c993047f2}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{string}]{identificador,  }\item[{double}]{dist\+Clust }\end{DoxyParamCaption})}
+
+
+
+És la constructora d\textquotesingle{}un clúster amb la distància i els identificadors dels seus fills. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un clúster amb la seva identtificador i la seva distància amb els fills. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_aabe58870580df673e0a358958da17edb}\label{class_cluster_aabe58870580df673e0a358958da17edb}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, double $>$ $>$ \&}]{Ccluster }\end{DoxyParamCaption})}
+
+
+
+És la constructora d\textquotesingle{}un clúster a partir del Bin\+Tree. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un clúster creat a partir del bin\+Tree. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_a6a3ccf12d448810cc35f242f7f918ede}\label{class_cluster_a6a3ccf12d448810cc35f242f7f918ede}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{string}]{identificador,  }\item[{double}]{dist\+Clust,  }\item[{const Bin\+Tree$<$ pair$<$ string, double $>$ $>$ \&}]{esquerra,  }\item[{const Bin\+Tree$<$ pair$<$ string, double $>$ $>$ \&}]{dreta }\end{DoxyParamCaption})}
+
+
+
+És la constructora d\textquotesingle{}un clúster a partir del Bin\+Tree. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un clúster amb dos fills, cada intersecció de la descendència, el node, conté l\textquotesingle{}identificador i distància amb els dos fills 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cluster_adc079d1c392e2321752b8626d701e2c2}\label{class_cluster_adc079d1c392e2321752b8626d701e2c2}} 
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{Cluster()}{Cluster()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Cluster\+::\+Cluster (\begin{DoxyParamCaption}\item[{pair$<$ string, double $>$ \&}]{tmp,  }\item[{const \mbox{\hyperlink{class_cluster}{Cluster}} \&}]{Clust1,  }\item[{const \mbox{\hyperlink{class_cluster}{Cluster}} \&}]{Clust2 }\end{DoxyParamCaption})}
+
+
+
+És la constructora d\textquotesingle{}un clúster. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un clúster amb dos fills Clústers 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cluster_ad71aee52f66b225eb1a2d962e328bb4d}\label{class_cluster_ad71aee52f66b225eb1a2d962e328bb4d}} 
+\index{Cluster@{Cluster}!escriure\_cluster@{escriure\_cluster}}
+\index{escriure\_cluster@{escriure\_cluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{escriure\_cluster()}{escriure\_cluster()}}
+{\footnotesize\ttfamily void Cluster\+::escriure\+\_\+cluster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprimeix el contingut d\textquotesingle{}un Clúster. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Podem treure per pantalla el clúster resultant 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cluster_a0562603ece48e7c4daf8404ad7118e8b}\label{class_cluster_a0562603ece48e7c4daf8404ad7118e8b}} 
+\index{Cluster@{Cluster}!Ccluster@{Ccluster}}
+\index{Ccluster@{Ccluster}!Cluster@{Cluster}}
+\doxysubsubsection{\texorpdfstring{Ccluster}{Ccluster}}
+{\footnotesize\ttfamily Bin\+Tree$<$pair $<$string, double $>$ $>$ Cluster\+::\+Ccluster\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 26 del archivo Cluster.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cluster_8hh}{Cluster.\+hh}}\end{DoxyCompactItemize}

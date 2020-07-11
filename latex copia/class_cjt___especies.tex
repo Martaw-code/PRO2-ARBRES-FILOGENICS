@@ -1,0 +1,323 @@
+\hypertarget{class_cjt___especies}{}\doxysection{Referencia de la Clase Cjt\+\_\+\+Especies}
+\label{class_cjt___especies}\index{Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cjt___especies_ae423b9d5a456158136c17d9210c90c2e}{Cjt\+\_\+\+Especies}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cjt___especies_a1ca01609e28327635b4c1d4eb5baea5d}{$\sim$\+Cjt\+\_\+\+Especies}} ()
+\begin{DoxyCompactList}\small\item\em Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat, en aquest cas, és la destrcutora per defecte del \mbox{\hyperlink{class_conjunt}{Conjunt}} d\textquotesingle{}Espècies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_a8c8f2a8908eaf49351382feded72430f}{afegir\+\_\+especie}} (\mbox{\hyperlink{class_especie}{Especie}} \&especie)
+\begin{DoxyCompactList}\small\item\em Afageix una espècie al conjunt d\textquotesingle{}espècies amb un cert identificador (id), si ja existeix, retorna un missatge d\textquotesingle{}error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_a398588040efe87ebce4611b8fc163f11}{eliminar\+\_\+especie}} (string \&identificador)
+\begin{DoxyCompactList}\small\item\em Elimina una espècie del conjunt d\textquotesingle{}espècies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_a6c6a505dbb764b01b990b14ef4e28d73}{inicialitzar\+\_\+\+Taula\+\_\+\+Distancies\+\_\+C}} (\mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}} \&Conj\+Clust)
+\begin{DoxyCompactList}\small\item\em Ens permetrà tenir les dades de la Taula de Distàncies a la nova Taula de Distàncies, que en aquest cas serà la Taula de Distàncies de Clústers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_a34a3e78c4e61c5281e70870f91d57c54}{inicialitzar\+\_\+clusters}} (\mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}} \&Conj\+Clust)
+\begin{DoxyCompactList}\small\item\em Ens permet inicialitzar el \mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}} donat el Cjt\+\_\+\+Espècies. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___especies_a98438568ad33cc028a6b118432876faf}{existeix\+\_\+especie}} (string \&identificador)
+\begin{DoxyCompactList}\small\item\em Comprova si existeix una espècie al conjunt d\textquotesingle{}espècies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_especie}{Especie}} \mbox{\hyperlink{class_cjt___especies_a47d60793346e32dba1dedc9fdc47f551}{consultar\+\_\+\+Especie}} (string \&identificador)
+\begin{DoxyCompactList}\small\item\em Comprova si existeix una espècie al conjunt d\textquotesingle{}espècies i ens retorna l\textquotesingle{}espècie segons l\textquotesingle{}identificador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_aff667b781d6e46762f7d1285ea36bd81}{afegir\+\_\+\+Taula\+\_\+\+Distancies}} (string identificador)
+\begin{DoxyCompactList}\small\item\em Afegim una nova espècie a la Taula de Distàncies a través de l\textquotesingle{}identificador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_ae35b7bb3d88bf287a5121c4ba0150722}{borrar\+\_\+\+Taula\+\_\+\+Distancies}} (string identificador)
+\begin{DoxyCompactList}\small\item\em Borrem una espècie de la Taula de Distàncies a través de l\textquotesingle{}identificador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_aa5e93ac2d4049aa27c3d855c71fdbbc3}{actualitzar\+\_\+\+Taula\+\_\+\+Distancies}} ()
+\begin{DoxyCompactList}\small\item\em Actualitzem la Taula de Distàncies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_acc415ef38e2bce4a181f27d5a48fd453}{llegir\+\_\+conjunt\+\_\+especies}} (int n)
+\begin{DoxyCompactList}\small\item\em Llegim des del canal d\textquotesingle{}entrada un conjunt d\textquotesingle{}espècies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_a1711339dddb461918dfaddefb906b4ce}{escriure\+\_\+cjt\+\_\+especies}} () const
+\begin{DoxyCompactList}\small\item\em Imprimim el conjunt d\textquotesingle{}espècies. Si el conjunt d\textquotesingle{}espècies és buit, no imprimirà res. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___especies_a2b25d0e21625ae5274b36c1d62db190b}{escriure\+\_\+\+Taula\+\_\+\+Distancies}} ()
+\begin{DoxyCompactList}\small\item\em Imprimim la Taula de Distàncies entre cada espècie i la resta d\textquotesingle{}espècies del conjunt d\textquotesingle{}espècies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{class_especie}{Especie}} $>$ \mbox{\hyperlink{class_cjt___especies_a1afc15f45c62890a60aa13974cad5340}{Conjunt\+\_\+esp}}
+\begin{DoxyCompactList}\small\item\em Tenim un conjunt d\textquotesingle{}espècies, ordenat segons l\textquotesingle{}identificador de cada espècie i la corresponent Espècie del conjunt en un map. \end{DoxyCompactList}\item 
+map$<$ string, map$<$ string, double $>$ $>$ \mbox{\hyperlink{class_cjt___especies_a2b92045f333197afacbe04454a62f58a}{Taula\+\_\+\+Distancies}}
+\begin{DoxyCompactList}\small\item\em Tindrem un map de maps, que contindrà la Taula de les distàncies i emmagatzemarem les distàncies d\textquotesingle{}una espècie a la resta del conjunt. \end{DoxyCompactList}\item 
+map$<$ string, bool $>$ \mbox{\hyperlink{class_cjt___especies_adbbd2a687004f031d483149922dbe7eb}{Canvis\+\_\+\+Taules}}
+\begin{DoxyCompactList}\small\item\em Tindrem un map que ens servirà de registre per actualitzar la Taula de distàncies, segons afegim una espècies o l\textquotesingle{}eliminem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea 27 del archivo Cjt\+\_\+\+Especies.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt___especies_ae423b9d5a456158136c17d9210c90c2e}\label{class_cjt___especies_ae423b9d5a456158136c17d9210c90c2e}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!Cjt\_Especies@{Cjt\_Especies}}
+\index{Cjt\_Especies@{Cjt\_Especies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{Cjt\_Especies()}{Cjt\_Especies()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Especies\+::\+Cjt\+\_\+\+Especies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+S\textquotesingle{}executa automàticament al declarar un conjunt d\textquotesingle{}espècies \begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un conjunt d\textquotesingle{}espècies \textbackslash{} Time Complexity\+: O(1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a1ca01609e28327635b4c1d4eb5baea5d}\label{class_cjt___especies_a1ca01609e28327635b4c1d4eb5baea5d}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!````~Cjt\_Especies@{$\sim$Cjt\_Especies}}
+\index{````~Cjt\_Especies@{$\sim$Cjt\_Especies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cjt\_Especies()}{~Cjt\_Especies()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Especies\+::$\sim$\+Cjt\+\_\+\+Especies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat, en aquest cas, és la destrcutora per defecte del \mbox{\hyperlink{class_conjunt}{Conjunt}} d\textquotesingle{}Espècies. 
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt___especies_a8c8f2a8908eaf49351382feded72430f}\label{class_cjt___especies_a8c8f2a8908eaf49351382feded72430f}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!afegir\_especie@{afegir\_especie}}
+\index{afegir\_especie@{afegir\_especie}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{afegir\_especie()}{afegir\_especie()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::afegir\+\_\+especie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_especie}{Especie}} \&}]{especie }\end{DoxyParamCaption})}
+
+
+
+Afageix una espècie al conjunt d\textquotesingle{}espècies amb un cert identificador (id), si ja existeix, retorna un missatge d\textquotesingle{}error. 
+
+\begin{DoxyPrecond}{Precondición}
+Cjt\+\_\+\+Espècies está inicializada i afegeix una espècie que aparentment no està al conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Afegeix una espècie amb un cert identificador al conjunt d\textquotesingle{}espècies 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a398588040efe87ebce4611b8fc163f11}\label{class_cjt___especies_a398588040efe87ebce4611b8fc163f11}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!eliminar\_especie@{eliminar\_especie}}
+\index{eliminar\_especie@{eliminar\_especie}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{eliminar\_especie()}{eliminar\_especie()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::eliminar\+\_\+especie (\begin{DoxyParamCaption}\item[{string \&}]{identificador }\end{DoxyParamCaption})}
+
+
+
+Elimina una espècie del conjunt d\textquotesingle{}espècies. 
+
+\begin{DoxyPrecond}{Precondición}
+Cjt\+\_\+\+Espècies está inicializada 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Elimina una espècie amb un identificador del conjunt d\textquotesingle{}espècies. Altrament si la espècie ja existeix, escriu un missatge dient que amb l\textquotesingle{}identificador donat no existeix tal espècie al conjunt. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a6c6a505dbb764b01b990b14ef4e28d73}\label{class_cjt___especies_a6c6a505dbb764b01b990b14ef4e28d73}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!inicialitzar\_Taula\_Distancies\_C@{inicialitzar\_Taula\_Distancies\_C}}
+\index{inicialitzar\_Taula\_Distancies\_C@{inicialitzar\_Taula\_Distancies\_C}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{inicialitzar\_Taula\_Distancies\_C()}{inicialitzar\_Taula\_Distancies\_C()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::inicialitzar\+\_\+\+Taula\+\_\+\+Distancies\+\_\+C (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}} \&}]{Conj\+Clust }\end{DoxyParamCaption})}
+
+
+
+Ens permetrà tenir les dades de la Taula de Distàncies a la nova Taula de Distàncies, que en aquest cas serà la Taula de Distàncies de Clústers. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat serà una taula de Distàncies emmagatzemada amb les dades rebudes de la Taula de Distàncies 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a34a3e78c4e61c5281e70870f91d57c54}\label{class_cjt___especies_a34a3e78c4e61c5281e70870f91d57c54}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!inicialitzar\_clusters@{inicialitzar\_clusters}}
+\index{inicialitzar\_clusters@{inicialitzar\_clusters}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{inicialitzar\_clusters()}{inicialitzar\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::inicialitzar\+\_\+clusters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}} \&}]{Conj\+Clust }\end{DoxyParamCaption})}
+
+
+
+Ens permet inicialitzar el \mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}} donat el Cjt\+\_\+\+Espècies. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat serà el \mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}} inicialittzat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a98438568ad33cc028a6b118432876faf}\label{class_cjt___especies_a98438568ad33cc028a6b118432876faf}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!existeix\_especie@{existeix\_especie}}
+\index{existeix\_especie@{existeix\_especie}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{existeix\_especie()}{existeix\_especie()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Especies\+::existeix\+\_\+especie (\begin{DoxyParamCaption}\item[{string \&}]{identificador }\end{DoxyParamCaption})}
+
+
+
+Comprova si existeix una espècie al conjunt d\textquotesingle{}espècies. 
+
+\begin{DoxyPrecond}{Precondición}
+Cjt\+\_\+\+Espècies está inicializada, {\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna cert si existeix una espècie amb l\textquotesingle{}identificador i altrament, retorna fals 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a47d60793346e32dba1dedc9fdc47f551}\label{class_cjt___especies_a47d60793346e32dba1dedc9fdc47f551}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!consultar\_Especie@{consultar\_Especie}}
+\index{consultar\_Especie@{consultar\_Especie}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{consultar\_Especie()}{consultar\_Especie()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_especie}{Especie}} Cjt\+\_\+\+Especies\+::consultar\+\_\+\+Especie (\begin{DoxyParamCaption}\item[{string \&}]{identificador }\end{DoxyParamCaption})}
+
+
+
+Comprova si existeix una espècie al conjunt d\textquotesingle{}espècies i ens retorna l\textquotesingle{}espècie segons l\textquotesingle{}identificador. 
+
+\begin{DoxyPrecond}{Precondición}
+Cjt\+\_\+\+Espècies está inicializada, {\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna l\textquotesingle{}espècie espècie amb l\textquotesingle{}identificador 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_aff667b781d6e46762f7d1285ea36bd81}\label{class_cjt___especies_aff667b781d6e46762f7d1285ea36bd81}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!afegir\_Taula\_Distancies@{afegir\_Taula\_Distancies}}
+\index{afegir\_Taula\_Distancies@{afegir\_Taula\_Distancies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{afegir\_Taula\_Distancies()}{afegir\_Taula\_Distancies()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::afegir\+\_\+\+Taula\+\_\+\+Distancies (\begin{DoxyParamCaption}\item[{string}]{identificador }\end{DoxyParamCaption})}
+
+
+
+Afegim una nova espècie a la Taula de Distàncies a través de l\textquotesingle{}identificador. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert, sí, tenim una espècie que no existeix 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la Taula de Distàncies amb l\textquotesingle{}espècie insertada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_ae35b7bb3d88bf287a5121c4ba0150722}\label{class_cjt___especies_ae35b7bb3d88bf287a5121c4ba0150722}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!borrar\_Taula\_Distancies@{borrar\_Taula\_Distancies}}
+\index{borrar\_Taula\_Distancies@{borrar\_Taula\_Distancies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{borrar\_Taula\_Distancies()}{borrar\_Taula\_Distancies()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::borrar\+\_\+\+Taula\+\_\+\+Distancies (\begin{DoxyParamCaption}\item[{string}]{identificador }\end{DoxyParamCaption})}
+
+
+
+Borrem una espècie de la Taula de Distàncies a través de l\textquotesingle{}identificador. 
+
+\begin{DoxyPrecond}{Precondición}
+Cert, sí, tenim una espècie que existeix 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la Taula de Distàncies sense l\textquotesingle{}espècie eliminada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_aa5e93ac2d4049aa27c3d855c71fdbbc3}\label{class_cjt___especies_aa5e93ac2d4049aa27c3d855c71fdbbc3}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!actualitzar\_Taula\_Distancies@{actualitzar\_Taula\_Distancies}}
+\index{actualitzar\_Taula\_Distancies@{actualitzar\_Taula\_Distancies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{actualitzar\_Taula\_Distancies()}{actualitzar\_Taula\_Distancies()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::actualitzar\+\_\+\+Taula\+\_\+\+Distancies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualitzem la Taula de Distàncies. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la Taula de Distàncies amb les modificacions condicionades 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_acc415ef38e2bce4a181f27d5a48fd453}\label{class_cjt___especies_acc415ef38e2bce4a181f27d5a48fd453}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!llegir\_conjunt\_especies@{llegir\_conjunt\_especies}}
+\index{llegir\_conjunt\_especies@{llegir\_conjunt\_especies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{llegir\_conjunt\_especies()}{llegir\_conjunt\_especies()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::llegir\+\_\+conjunt\+\_\+especies (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Llegim des del canal d\textquotesingle{}entrada un conjunt d\textquotesingle{}espècies. 
+
+\begin{DoxyPrecond}{Precondición}
+Llegim al canal d\textquotesingle{}entrada un enter n $>$= 0 i seguidament un conjunt d\textquotesingle{}espècies, les n espècies, tenen dos strings associats, un identificador i un gen, cadascún únic per a cada espècies diferent. És a dir dues espècies, seran diferents si, i només si, tenen un gen o un identificador diferents. Els continguts previs del conjunt d\textquotesingle{}espècies els esborrem. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat serà un conjunt n d\textquotesingle{}espècies que passaran a formar part del conjunt d\textquotesingle{}espècies. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a1711339dddb461918dfaddefb906b4ce}\label{class_cjt___especies_a1711339dddb461918dfaddefb906b4ce}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!escriure\_cjt\_especies@{escriure\_cjt\_especies}}
+\index{escriure\_cjt\_especies@{escriure\_cjt\_especies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{escriure\_cjt\_especies()}{escriure\_cjt\_especies()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::escriure\+\_\+cjt\+\_\+especies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprimim el conjunt d\textquotesingle{}espècies. Si el conjunt d\textquotesingle{}espècies és buit, no imprimirà res. 
+
+\begin{DoxyPrecond}{Precondición}
+El conjunt d\textquotesingle{}espècies està inicialitzat i pot ser buit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna el conjunt d\textquotesingle{}espècies si el conjunt és no buit, altrament no retorna res. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___especies_a2b25d0e21625ae5274b36c1d62db190b}\label{class_cjt___especies_a2b25d0e21625ae5274b36c1d62db190b}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!escriure\_Taula\_Distancies@{escriure\_Taula\_Distancies}}
+\index{escriure\_Taula\_Distancies@{escriure\_Taula\_Distancies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{escriure\_Taula\_Distancies()}{escriure\_Taula\_Distancies()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Especies\+::escriure\+\_\+\+Taula\+\_\+\+Distancies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprimim la Taula de Distàncies entre cada espècie i la resta d\textquotesingle{}espècies del conjunt d\textquotesingle{}espècies. 
+
+\begin{DoxyPrecond}{Precondición}
+Tenim un \mbox{\hyperlink{class_conjunt}{Conjunt}} d\textquotesingle{}espècies, pot ser buit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprimeix la taula de distàncies si el conjunt és no buit, o altrament no imprimeix res 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt___especies_a1afc15f45c62890a60aa13974cad5340}\label{class_cjt___especies_a1afc15f45c62890a60aa13974cad5340}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!Conjunt\_esp@{Conjunt\_esp}}
+\index{Conjunt\_esp@{Conjunt\_esp}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{Conjunt\_esp}{Conjunt\_esp}}
+{\footnotesize\ttfamily map$<$string,\mbox{\hyperlink{class_especie}{Especie}}$>$ Cjt\+\_\+\+Especies\+::\+Conjunt\+\_\+esp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tenim un conjunt d\textquotesingle{}espècies, ordenat segons l\textquotesingle{}identificador de cada espècie i la corresponent Espècie del conjunt en un map. 
+
+
+
+Definición en la línea 32 del archivo Cjt\+\_\+\+Especies.\+hh.
+
+\mbox{\Hypertarget{class_cjt___especies_a2b92045f333197afacbe04454a62f58a}\label{class_cjt___especies_a2b92045f333197afacbe04454a62f58a}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!Taula\_Distancies@{Taula\_Distancies}}
+\index{Taula\_Distancies@{Taula\_Distancies}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{Taula\_Distancies}{Taula\_Distancies}}
+{\footnotesize\ttfamily map$<$string,map$<$string,double$>$ $>$ Cjt\+\_\+\+Especies\+::\+Taula\+\_\+\+Distancies\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tindrem un map de maps, que contindrà la Taula de les distàncies i emmagatzemarem les distàncies d\textquotesingle{}una espècie a la resta del conjunt. 
+
+
+
+Definición en la línea 34 del archivo Cjt\+\_\+\+Especies.\+hh.
+
+\mbox{\Hypertarget{class_cjt___especies_adbbd2a687004f031d483149922dbe7eb}\label{class_cjt___especies_adbbd2a687004f031d483149922dbe7eb}} 
+\index{Cjt\_Especies@{Cjt\_Especies}!Canvis\_Taules@{Canvis\_Taules}}
+\index{Canvis\_Taules@{Canvis\_Taules}!Cjt\_Especies@{Cjt\_Especies}}
+\doxysubsubsection{\texorpdfstring{Canvis\_Taules}{Canvis\_Taules}}
+{\footnotesize\ttfamily map$<$string,bool$>$ Cjt\+\_\+\+Especies\+::\+Canvis\+\_\+\+Taules\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tindrem un map que ens servirà de registre per actualitzar la Taula de distàncies, segons afegim una espècies o l\textquotesingle{}eliminem. 
+
+
+
+Definición en la línea 36 del archivo Cjt\+\_\+\+Especies.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cjt___especies_8hh}{Cjt\+\_\+\+Especies.\+hh}}\end{DoxyCompactItemize}

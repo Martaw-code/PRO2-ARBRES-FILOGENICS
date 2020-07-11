@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica Pro2: Generador d&#39;arbres de filogenétics: Referencia de la Clase Cjt_Clusters</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica Pro2: Generador d&#39;arbres de filogenétics
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_cjt___clusters-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase Cjt_Clusters</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Representa un conjunt de clústers al nostre arbre filogènic. Conté operacions per inicialitzar clústers, mirar la mida d'un clúster, mirar si és un clúster buit, executar l'algoritme WPGMA i "consultar
+    clústers en punts intermedis de l'arbre per saber-ne la identificació de les espècies que conté ".  
+ <a href="class_cjt___clusters.html#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a2e55759944a78043744103e19dd87c1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a2e55759944a78043744103e19dd87c1c">Cjt_Clusters</a> ()</td></tr>
+<tr class="memdesc:a2e55759944a78043744103e19dd87c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructora per defecte.  <a href="class_cjt___clusters.html#a2e55759944a78043744103e19dd87c1c">Más...</a><br /></td></tr>
+<tr class="separator:a2e55759944a78043744103e19dd87c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b7feadb377225edecc0b980a8c18d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a71b7feadb377225edecc0b980a8c18d6">~Cjt_Clusters</a> ()</td></tr>
+<tr class="memdesc:a71b7feadb377225edecc0b980a8c18d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Esborra automaticament els objectes locals en sortir d'un ambit de visibilitat.  <a href="class_cjt___clusters.html#a71b7feadb377225edecc0b980a8c18d6">Más...</a><br /></td></tr>
+<tr class="separator:a71b7feadb377225edecc0b980a8c18d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa965902f8fe33e9f0960d2aefabe0440"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#aa965902f8fe33e9f0960d2aefabe0440">existeix_cluster</a> (string identificador)</td></tr>
+<tr class="memdesc:aa965902f8fe33e9f0960d2aefabe0440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volem comprovar si existeix un clúster del conjunt amb un cert identificador.  <a href="class_cjt___clusters.html#aa965902f8fe33e9f0960d2aefabe0440">Más...</a><br /></td></tr>
+<tr class="separator:aa965902f8fe33e9f0960d2aefabe0440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd648ebd5167d8619a7095cbee32232"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a0cd648ebd5167d8619a7095cbee32232">buit</a> ()</td></tr>
+<tr class="memdesc:a0cd648ebd5167d8619a7095cbee32232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprovem si tenim un conjunt buit de Clústers.  <a href="class_cjt___clusters.html#a0cd648ebd5167d8619a7095cbee32232">Más...</a><br /></td></tr>
+<tr class="separator:a0cd648ebd5167d8619a7095cbee32232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdd76669766053122ad8d62d3884fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#acfdd76669766053122ad8d62d3884fec">buidar_taula</a> ()</td></tr>
+<tr class="memdesc:acfdd76669766053122ad8d62d3884fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retornem la taula de distàncies de Clústers buida.  <a href="class_cjt___clusters.html#acfdd76669766053122ad8d62d3884fec">Más...</a><br /></td></tr>
+<tr class="separator:acfdd76669766053122ad8d62d3884fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11851dd050ffbcbea2bcedba4f542191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a11851dd050ffbcbea2bcedba4f542191">buidar_conjunt</a> ()</td></tr>
+<tr class="memdesc:a11851dd050ffbcbea2bcedba4f542191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retornem el <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers buit.  <a href="class_cjt___clusters.html#a11851dd050ffbcbea2bcedba4f542191">Más...</a><br /></td></tr>
+<tr class="separator:a11851dd050ffbcbea2bcedba4f542191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7fc14281389e5e16320b8ed70baf10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a2a7fc14281389e5e16320b8ed70baf10">mida_Ccs</a> ()</td></tr>
+<tr class="memdesc:a2a7fc14281389e5e16320b8ed70baf10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volem comprovar la mida del <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers.  <a href="class_cjt___clusters.html#a2a7fc14281389e5e16320b8ed70baf10">Más...</a><br /></td></tr>
+<tr class="separator:a2a7fc14281389e5e16320b8ed70baf10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84aad74f3748b0e524c74fb4551a355f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a84aad74f3748b0e524c74fb4551a355f">inserir_clusters</a> (string identificador, double Dist)</td></tr>
+<tr class="memdesc:a84aad74f3748b0e524c74fb4551a355f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volem inserir un clúster en el <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers.  <a href="class_cjt___clusters.html#a84aad74f3748b0e524c74fb4551a355f">Más...</a><br /></td></tr>
+<tr class="separator:a84aad74f3748b0e524c74fb4551a355f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45806f2852e1d3f203b2bf402e088c72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a45806f2852e1d3f203b2bf402e088c72">actualitzar_distancies_clusters_wpgma</a> ()</td></tr>
+<tr class="memdesc:a45806f2852e1d3f203b2bf402e088c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa el mètode aproximatiu WPGMA.  <a href="class_cjt___clusters.html#a45806f2852e1d3f203b2bf402e088c72">Más...</a><br /></td></tr>
+<tr class="separator:a45806f2852e1d3f203b2bf402e088c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade9459f81dfe90b47d3e42138475219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#aade9459f81dfe90b47d3e42138475219">inserir_Taula_Distancies_C</a> (const string identificador, map&lt; string, double &gt; &amp;mp)</td></tr>
+<tr class="memdesc:aade9459f81dfe90b47d3e42138475219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserta a la Taula de les distàncies dels Clústers les dades que hem obtingut des del Cjt_Espècies.  <a href="class_cjt___clusters.html#aade9459f81dfe90b47d3e42138475219">Más...</a><br /></td></tr>
+<tr class="separator:aade9459f81dfe90b47d3e42138475219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f9707b1239d22d905ac8ab20f0f5b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cluster.html">Cluster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a47f9707b1239d22d905ac8ab20f0f5b0">consultar_Cluster</a> (string identificador) const</td></tr>
+<tr class="memdesc:a47f9707b1239d22d905ac8ab20f0f5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultem un clúster del <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers.  <a href="class_cjt___clusters.html#a47f9707b1239d22d905ac8ab20f0f5b0">Más...</a><br /></td></tr>
+<tr class="separator:a47f9707b1239d22d905ac8ab20f0f5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27109bf8fd5c28b1ee40bd771ef7772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#ad27109bf8fd5c28b1ee40bd771ef7772">inicialitzar_arbre_filogenic</a> ()</td></tr>
+<tr class="memdesc:ad27109bf8fd5c28b1ee40bd771ef7772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ens permetrà crear un arbre filogènic a través del <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers.  <a href="class_cjt___clusters.html#ad27109bf8fd5c28b1ee40bd771ef7772">Más...</a><br /></td></tr>
+<tr class="separator:ad27109bf8fd5c28b1ee40bd771ef7772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb1968b11b984441b5e0d28c956aa8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#abbb1968b11b984441b5e0d28c956aa8a">escriure_Taula_Distancies_C</a> ()</td></tr>
+<tr class="memdesc:abbb1968b11b984441b5e0d28c956aa8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traiem pel canal de sortida el contingut de la Taula de Distàncies dels Clusters.  <a href="class_cjt___clusters.html#abbb1968b11b984441b5e0d28c956aa8a">Más...</a><br /></td></tr>
+<tr class="separator:abbb1968b11b984441b5e0d28c956aa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc49d0e836e6499d18d0320fa8577350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#acc49d0e836e6499d18d0320fa8577350">escriure_clusters</a> () const</td></tr>
+<tr class="memdesc:acc49d0e836e6499d18d0320fa8577350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traiem pel canal de sortida el contingut d'un clúster.  <a href="class_cjt___clusters.html#acc49d0e836e6499d18d0320fa8577350">Más...</a><br /></td></tr>
+<tr class="separator:acc49d0e836e6499d18d0320fa8577350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a10d54644809e4e82d90a01f43e8ceaf9"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="class_cluster.html">Cluster</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a10d54644809e4e82d90a01f43e8ceaf9">Conjunt_clust</a></td></tr>
+<tr class="memdesc:a10d54644809e4e82d90a01f43e8ceaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tenim un map que guardarà el <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers.  <a href="class_cjt___clusters.html#a10d54644809e4e82d90a01f43e8ceaf9">Más...</a><br /></td></tr>
+<tr class="separator:a10d54644809e4e82d90a01f43e8ceaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42111cb252fbea5294c1ef55229a5959"><td class="memItemLeft" align="right" valign="top">map&lt; string, map&lt; string, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html#a42111cb252fbea5294c1ef55229a5959">Taula_Distancies_C</a></td></tr>
+<tr class="memdesc:a42111cb252fbea5294c1ef55229a5959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tenim un map amb les distàncies entre los Clústers.  <a href="class_cjt___clusters.html#a42111cb252fbea5294c1ef55229a5959">Más...</a><br /></td></tr>
+<tr class="separator:a42111cb252fbea5294c1ef55229a5959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Representa un conjunt de clústers al nostre arbre filogènic. Conté operacions per inicialitzar clústers, mirar la mida d'un clúster, mirar si és un clúster buit, executar l'algoritme WPGMA i "consultar
+    clústers en punts intermedis de l'arbre per saber-ne la identificació de les espècies que conté ". </p>
+<p>CLASSE CONJUNT DE CLÚSTERS </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___clusters_8hh_source.html#l00025">25</a> del archivo <a class="el" href="_cjt___clusters_8hh_source.html">Cjt_Clusters.hh</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a id="a2e55759944a78043744103e19dd87c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e55759944a78043744103e19dd87c1c">&#9670;&nbsp;</a></span>Cjt_Clusters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cjt_Clusters::Cjt_Clusters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructora per defecte. </p>
+<p>S'executa automàticament al declarar un conjunt de Clústers </p><dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és un conjunt de clústers buit. \ Time Complexity: O(1) </dd></dl>
+
+</div>
+</div>
+<a id="a71b7feadb377225edecc0b980a8c18d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b7feadb377225edecc0b980a8c18d6">&#9670;&nbsp;</a></span>~Cjt_Clusters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cjt_Clusters::~Cjt_Clusters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Esborra automaticament els objectes locals en sortir d'un ambit de visibilitat. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="aa965902f8fe33e9f0960d2aefabe0440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa965902f8fe33e9f0960d2aefabe0440">&#9670;&nbsp;</a></span>existeix_cluster()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cjt_Clusters::existeix_cluster </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>identificador</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Volem comprovar si existeix un clúster del conjunt amb un cert identificador. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> Tenim un conjunt de clústers no buit </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna true si existeix el clúster amb l'identificador, altrament retorna false si no existeix </dd></dl>
+
+</div>
+</div>
+<a id="a0cd648ebd5167d8619a7095cbee32232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd648ebd5167d8619a7095cbee32232">&#9670;&nbsp;</a></span>buit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cjt_Clusters::buit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comprovem si tenim un conjunt buit de Clústers. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> Tenim un conjunt de clústers inicialitzat, o buit </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna el false si el conjunt és buit, cert si conté algun clúster </dd></dl>
+
+</div>
+</div>
+<a id="acfdd76669766053122ad8d62d3884fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdd76669766053122ad8d62d3884fec">&#9670;&nbsp;</a></span>buidar_taula()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::buidar_taula </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retornem la taula de distàncies de Clústers buida. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna la Taula de Distàncies de clústers buida </dd></dl>
+
+</div>
+</div>
+<a id="a11851dd050ffbcbea2bcedba4f542191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11851dd050ffbcbea2bcedba4f542191">&#9670;&nbsp;</a></span>buidar_conjunt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::buidar_conjunt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retornem el <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers buit. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna el <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers buit </dd></dl>
+
+</div>
+</div>
+<a id="a2a7fc14281389e5e16320b8ed70baf10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7fc14281389e5e16320b8ed70baf10">&#9670;&nbsp;</a></span>mida_Ccs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cjt_Clusters::mida_Ccs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Volem comprovar la mida del <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna el nombre de clústers que conté el conjunt </dd></dl>
+
+</div>
+</div>
+<a id="a84aad74f3748b0e524c74fb4551a355f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84aad74f3748b0e524c74fb4551a355f">&#9670;&nbsp;</a></span>inserir_clusters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::inserir_clusters </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>identificador</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Dist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Volem inserir un clúster en el <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és l'adició d'un clúster al <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers </dd></dl>
+
+</div>
+</div>
+<a id="a45806f2852e1d3f203b2bf402e088c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45806f2852e1d3f203b2bf402e088c72">&#9670;&nbsp;</a></span>actualitzar_distancies_clusters_wpgma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::actualitzar_distancies_clusters_wpgma </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executa el mètode aproximatiu WPGMA. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultat és la fusió dels dos Clusters a menor distància en un sol Clúster y actualizem el canvi a la Taula de distàncies </dd></dl>
+
+</div>
+</div>
+<a id="aade9459f81dfe90b47d3e42138475219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade9459f81dfe90b47d3e42138475219">&#9670;&nbsp;</a></span>inserir_Taula_Distancies_C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::inserir_Taula_Distancies_C </td>
+          <td>(</td>
+          <td class="paramtype">const string&#160;</td>
+          <td class="paramname"><em>identificador</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">map&lt; string, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserta a la Taula de les distàncies dels Clústers les dades que hem obtingut des del Cjt_Espècies. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>La Taula de distàncies dels Clusters conté les dades que ha rebut des del Cjt_d'Espècies </dd></dl>
+
+</div>
+</div>
+<a id="a47f9707b1239d22d905ac8ab20f0f5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f9707b1239d22d905ac8ab20f0f5b0">&#9670;&nbsp;</a></span>consultar_Cluster()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cluster.html">Cluster</a> Cjt_Clusters::consultar_Cluster </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>identificador</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultem un clúster del <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retornem el Clúster del conjutn que busquem amb l'identificador </dd></dl>
+
+</div>
+</div>
+<a id="ad27109bf8fd5c28b1ee40bd771ef7772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27109bf8fd5c28b1ee40bd771ef7772">&#9670;&nbsp;</a></span>inicialitzar_arbre_filogenic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::inicialitzar_arbre_filogenic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ens permetrà crear un arbre filogènic a través del <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> Tenim un conjunt de Clústers no buit</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Obtenim un únic clúster a partir de l'execució del mètode aproximatiu WPGMA </dd></dl>
+
+</div>
+</div>
+<a id="abbb1968b11b984441b5e0d28c956aa8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb1968b11b984441b5e0d28c956aa8a">&#9670;&nbsp;</a></span>escriure_Taula_Distancies_C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::escriure_Taula_Distancies_C </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traiem pel canal de sortida el contingut de la Taula de Distàncies dels Clusters. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retornem el contingut de la Taula a través del canal estàndard de sortida. </dd></dl>
+
+</div>
+</div>
+<a id="acc49d0e836e6499d18d0320fa8577350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc49d0e836e6499d18d0320fa8577350">&#9670;&nbsp;</a></span>escriure_clusters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Clusters::escriure_clusters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traiem pel canal de sortida el contingut d'un clúster. </p>
+<dl class="section pre"><dt>Precondición</dt><dd><em> cert </em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retornem l'hipotètic diagrama del clúster a través del canal estàndard de sortida </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a id="a10d54644809e4e82d90a01f43e8ceaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d54644809e4e82d90a01f43e8ceaf9">&#9670;&nbsp;</a></span>Conjunt_clust</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,<a class="el" href="class_cluster.html">Cluster</a>&gt; Cjt_Clusters::Conjunt_clust</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tenim un map que guardarà el <a class="el" href="class_conjunt.html" title="Representa un conjunt d&#39;espècies del nostre arbre filogènic. Conté operacions per llegir un conjunt d...">Conjunt</a> de Clústers. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___clusters_8hh_source.html#l00028">28</a> del archivo <a class="el" href="_cjt___clusters_8hh_source.html">Cjt_Clusters.hh</a>.</p>
+
+</div>
+</div>
+<a id="a42111cb252fbea5294c1ef55229a5959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42111cb252fbea5294c1ef55229a5959">&#9670;&nbsp;</a></span>Taula_Distancies_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,map &lt;string,double&gt; &gt; Cjt_Clusters::Taula_Distancies_C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tenim un map amb les distàncies entre los Clústers. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___clusters_8hh_source.html#l00030">30</a> del archivo <a class="el" href="_cjt___clusters_8hh_source.html">Cjt_Clusters.hh</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li><a class="el" href="_cjt___clusters_8hh_source.html">Cjt_Clusters.hh</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

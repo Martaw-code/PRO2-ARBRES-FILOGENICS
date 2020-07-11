@@ -1,0 +1,316 @@
+\hypertarget{class_cjt___clusters}{}\doxysection{Referencia de la Clase Cjt\+\_\+\+Clusters}
+\label{class_cjt___clusters}\index{Cjt\_Clusters@{Cjt\_Clusters}}
+
+
+Representa un conjunt de clústers al nostre arbre filogènic. Conté operacions per inicialitzar clústers, mirar la mida d\textquotesingle{}un clúster, mirar si és un clúster buit, executar l\textquotesingle{}algoritme W\+P\+G\+MA i \char`\"{}consultar
+    clústers en punts intermedis de l\textquotesingle{}arbre per saber-\/ne la identificació de les espècies que conté \char`\"{}.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}{Cjt\+\_\+\+Clusters}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cjt___clusters_a71b7feadb377225edecc0b980a8c18d6}{$\sim$\+Cjt\+\_\+\+Clusters}} ()
+\begin{DoxyCompactList}\small\item\em Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___clusters_aa965902f8fe33e9f0960d2aefabe0440}{existeix\+\_\+cluster}} (string identificador)
+\begin{DoxyCompactList}\small\item\em Volem comprovar si existeix un clúster del conjunt amb un cert identificador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt___clusters_a0cd648ebd5167d8619a7095cbee32232}{buit}} ()
+\begin{DoxyCompactList}\small\item\em Comprovem si tenim un conjunt buit de Clústers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_acfdd76669766053122ad8d62d3884fec}{buidar\+\_\+taula}} ()
+\begin{DoxyCompactList}\small\item\em Retornem la taula de distàncies de Clústers buida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a11851dd050ffbcbea2bcedba4f542191}{buidar\+\_\+conjunt}} ()
+\begin{DoxyCompactList}\small\item\em Retornem el \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers buit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt___clusters_a2a7fc14281389e5e16320b8ed70baf10}{mida\+\_\+\+Ccs}} ()
+\begin{DoxyCompactList}\small\item\em Volem comprovar la mida del \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a84aad74f3748b0e524c74fb4551a355f}{inserir\+\_\+clusters}} (string identificador, double Dist)
+\begin{DoxyCompactList}\small\item\em Volem inserir un clúster en el \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a45806f2852e1d3f203b2bf402e088c72}{actualitzar\+\_\+distancies\+\_\+clusters\+\_\+wpgma}} ()
+\begin{DoxyCompactList}\small\item\em Executa el mètode aproximatiu W\+P\+G\+MA. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_aade9459f81dfe90b47d3e42138475219}{inserir\+\_\+\+Taula\+\_\+\+Distancies\+\_\+C}} (const string identificador, map$<$ string, double $>$ \&mp)
+\begin{DoxyCompactList}\small\item\em Inserta a la Taula de les distàncies dels Clústers les dades que hem obtingut des del Cjt\+\_\+\+Espècies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cluster}{Cluster}} \mbox{\hyperlink{class_cjt___clusters_a47f9707b1239d22d905ac8ab20f0f5b0}{consultar\+\_\+\+Cluster}} (string identificador) const
+\begin{DoxyCompactList}\small\item\em Consultem un clúster del \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_ad27109bf8fd5c28b1ee40bd771ef7772}{inicialitzar\+\_\+arbre\+\_\+filogenic}} ()
+\begin{DoxyCompactList}\small\item\em Ens permetrà crear un arbre filogènic a través del \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_abbb1968b11b984441b5e0d28c956aa8a}{escriure\+\_\+\+Taula\+\_\+\+Distancies\+\_\+C}} ()
+\begin{DoxyCompactList}\small\item\em Traiem pel canal de sortida el contingut de la Taula de Distàncies dels Clusters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_acc49d0e836e6499d18d0320fa8577350}{escriure\+\_\+clusters}} () const
+\begin{DoxyCompactList}\small\item\em Traiem pel canal de sortida el contingut d\textquotesingle{}un clúster. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{class_cluster}{Cluster}} $>$ \mbox{\hyperlink{class_cjt___clusters_a10d54644809e4e82d90a01f43e8ceaf9}{Conjunt\+\_\+clust}}
+\begin{DoxyCompactList}\small\item\em Tenim un map que guardarà el \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. \end{DoxyCompactList}\item 
+map$<$ string, map$<$ string, double $>$ $>$ \mbox{\hyperlink{class_cjt___clusters_a42111cb252fbea5294c1ef55229a5959}{Taula\+\_\+\+Distancies\+\_\+C}}
+\begin{DoxyCompactList}\small\item\em Tenim un map amb les distàncies entre los Clústers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un conjunt de clústers al nostre arbre filogènic. Conté operacions per inicialitzar clústers, mirar la mida d\textquotesingle{}un clúster, mirar si és un clúster buit, executar l\textquotesingle{}algoritme W\+P\+G\+MA i \char`\"{}consultar
+    clústers en punts intermedis de l\textquotesingle{}arbre per saber-\/ne la identificació de les espècies que conté \char`\"{}. 
+
+C\+L\+A\+S\+SE C\+O\+N\+J\+U\+NT DE C\+LÚ\+S\+T\+E\+RS 
+
+Definición en la línea 25 del archivo Cjt\+\_\+\+Clusters.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}\label{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Cjt\_Clusters()}{Cjt\_Clusters()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Clusters\+::\+Cjt\+\_\+\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+S\textquotesingle{}executa automàticament al declarar un conjunt de Clústers \begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un conjunt de clústers buit. \textbackslash{} Time Complexity\+: O(1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a71b7feadb377225edecc0b980a8c18d6}\label{class_cjt___clusters_a71b7feadb377225edecc0b980a8c18d6}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!````~Cjt\_Clusters@{$\sim$Cjt\_Clusters}}
+\index{````~Cjt\_Clusters@{$\sim$Cjt\_Clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cjt\_Clusters()}{~Cjt\_Clusters()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Clusters\+::$\sim$\+Cjt\+\_\+\+Clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Esborra automaticament els objectes locals en sortir d\textquotesingle{}un ambit de visibilitat. 
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt___clusters_aa965902f8fe33e9f0960d2aefabe0440}\label{class_cjt___clusters_aa965902f8fe33e9f0960d2aefabe0440}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!existeix\_cluster@{existeix\_cluster}}
+\index{existeix\_cluster@{existeix\_cluster}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{existeix\_cluster()}{existeix\_cluster()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Clusters\+::existeix\+\_\+cluster (\begin{DoxyParamCaption}\item[{string}]{identificador }\end{DoxyParamCaption})}
+
+
+
+Volem comprovar si existeix un clúster del conjunt amb un cert identificador. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Tenim un conjunt de clústers no buit } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna true si existeix el clúster amb l\textquotesingle{}identificador, altrament retorna false si no existeix 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a0cd648ebd5167d8619a7095cbee32232}\label{class_cjt___clusters_a0cd648ebd5167d8619a7095cbee32232}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!buit@{buit}}
+\index{buit@{buit}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{buit()}{buit()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Clusters\+::buit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Comprovem si tenim un conjunt buit de Clústers. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Tenim un conjunt de clústers inicialitzat, o buit } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna el false si el conjunt és buit, cert si conté algun clúster 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_acfdd76669766053122ad8d62d3884fec}\label{class_cjt___clusters_acfdd76669766053122ad8d62d3884fec}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!buidar\_taula@{buidar\_taula}}
+\index{buidar\_taula@{buidar\_taula}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{buidar\_taula()}{buidar\_taula()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::buidar\+\_\+taula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retornem la taula de distàncies de Clústers buida. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la Taula de Distàncies de clústers buida 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a11851dd050ffbcbea2bcedba4f542191}\label{class_cjt___clusters_a11851dd050ffbcbea2bcedba4f542191}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!buidar\_conjunt@{buidar\_conjunt}}
+\index{buidar\_conjunt@{buidar\_conjunt}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{buidar\_conjunt()}{buidar\_conjunt()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::buidar\+\_\+conjunt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retornem el \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers buit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna el \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers buit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a2a7fc14281389e5e16320b8ed70baf10}\label{class_cjt___clusters_a2a7fc14281389e5e16320b8ed70baf10}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!mida\_Ccs@{mida\_Ccs}}
+\index{mida\_Ccs@{mida\_Ccs}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{mida\_Ccs()}{mida\_Ccs()}}
+{\footnotesize\ttfamily int Cjt\+\_\+\+Clusters\+::mida\+\_\+\+Ccs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Volem comprovar la mida del \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna el nombre de clústers que conté el conjunt 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a84aad74f3748b0e524c74fb4551a355f}\label{class_cjt___clusters_a84aad74f3748b0e524c74fb4551a355f}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!inserir\_clusters@{inserir\_clusters}}
+\index{inserir\_clusters@{inserir\_clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{inserir\_clusters()}{inserir\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::inserir\+\_\+clusters (\begin{DoxyParamCaption}\item[{string}]{identificador,  }\item[{double}]{Dist }\end{DoxyParamCaption})}
+
+
+
+Volem inserir un clúster en el \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és l\textquotesingle{}adició d\textquotesingle{}un clúster al \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a45806f2852e1d3f203b2bf402e088c72}\label{class_cjt___clusters_a45806f2852e1d3f203b2bf402e088c72}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!actualitzar\_distancies\_clusters\_wpgma@{actualitzar\_distancies\_clusters\_wpgma}}
+\index{actualitzar\_distancies\_clusters\_wpgma@{actualitzar\_distancies\_clusters\_wpgma}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{actualitzar\_distancies\_clusters\_wpgma()}{actualitzar\_distancies\_clusters\_wpgma()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::actualitzar\+\_\+distancies\+\_\+clusters\+\_\+wpgma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executa el mètode aproximatiu W\+P\+G\+MA. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la fusió dels dos Clusters a menor distància en un sol Clúster y actualizem el canvi a la Taula de distàncies 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_aade9459f81dfe90b47d3e42138475219}\label{class_cjt___clusters_aade9459f81dfe90b47d3e42138475219}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!inserir\_Taula\_Distancies\_C@{inserir\_Taula\_Distancies\_C}}
+\index{inserir\_Taula\_Distancies\_C@{inserir\_Taula\_Distancies\_C}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{inserir\_Taula\_Distancies\_C()}{inserir\_Taula\_Distancies\_C()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::inserir\+\_\+\+Taula\+\_\+\+Distancies\+\_\+C (\begin{DoxyParamCaption}\item[{const string}]{identificador,  }\item[{map$<$ string, double $>$ \&}]{mp }\end{DoxyParamCaption})}
+
+
+
+Inserta a la Taula de les distàncies dels Clústers les dades que hem obtingut des del Cjt\+\_\+\+Espècies. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La Taula de distàncies dels Clusters conté les dades que ha rebut des del Cjt\+\_\+d\textquotesingle{}Espècies 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_a47f9707b1239d22d905ac8ab20f0f5b0}\label{class_cjt___clusters_a47f9707b1239d22d905ac8ab20f0f5b0}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!consultar\_Cluster@{consultar\_Cluster}}
+\index{consultar\_Cluster@{consultar\_Cluster}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{consultar\_Cluster()}{consultar\_Cluster()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cluster}{Cluster}} Cjt\+\_\+\+Clusters\+::consultar\+\_\+\+Cluster (\begin{DoxyParamCaption}\item[{string}]{identificador }\end{DoxyParamCaption}) const}
+
+
+
+Consultem un clúster del \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retornem el Clúster del conjutn que busquem amb l\textquotesingle{}identificador 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_ad27109bf8fd5c28b1ee40bd771ef7772}\label{class_cjt___clusters_ad27109bf8fd5c28b1ee40bd771ef7772}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!inicialitzar\_arbre\_filogenic@{inicialitzar\_arbre\_filogenic}}
+\index{inicialitzar\_arbre\_filogenic@{inicialitzar\_arbre\_filogenic}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{inicialitzar\_arbre\_filogenic()}{inicialitzar\_arbre\_filogenic()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::inicialitzar\+\_\+arbre\+\_\+filogenic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ens permetrà crear un arbre filogènic a través del \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Tenim un conjunt de Clústers no buit} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Obtenim un únic clúster a partir de l\textquotesingle{}execució del mètode aproximatiu W\+P\+G\+MA 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_abbb1968b11b984441b5e0d28c956aa8a}\label{class_cjt___clusters_abbb1968b11b984441b5e0d28c956aa8a}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!escriure\_Taula\_Distancies\_C@{escriure\_Taula\_Distancies\_C}}
+\index{escriure\_Taula\_Distancies\_C@{escriure\_Taula\_Distancies\_C}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{escriure\_Taula\_Distancies\_C()}{escriure\_Taula\_Distancies\_C()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::escriure\+\_\+\+Taula\+\_\+\+Distancies\+\_\+C (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traiem pel canal de sortida el contingut de la Taula de Distàncies dels Clusters. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retornem el contingut de la Taula a través del canal estàndard de sortida. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___clusters_acc49d0e836e6499d18d0320fa8577350}\label{class_cjt___clusters_acc49d0e836e6499d18d0320fa8577350}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!escriure\_clusters@{escriure\_clusters}}
+\index{escriure\_clusters@{escriure\_clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{escriure\_clusters()}{escriure\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::escriure\+\_\+clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Traiem pel canal de sortida el contingut d\textquotesingle{}un clúster. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retornem l\textquotesingle{}hipotètic diagrama del clúster a través del canal estàndard de sortida 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt___clusters_a10d54644809e4e82d90a01f43e8ceaf9}\label{class_cjt___clusters_a10d54644809e4e82d90a01f43e8ceaf9}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Conjunt\_clust@{Conjunt\_clust}}
+\index{Conjunt\_clust@{Conjunt\_clust}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Conjunt\_clust}{Conjunt\_clust}}
+{\footnotesize\ttfamily map$<$string,\mbox{\hyperlink{class_cluster}{Cluster}}$>$ Cjt\+\_\+\+Clusters\+::\+Conjunt\+\_\+clust\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tenim un map que guardarà el \mbox{\hyperlink{class_conjunt}{Conjunt}} de Clústers. 
+
+
+
+Definición en la línea 28 del archivo Cjt\+\_\+\+Clusters.\+hh.
+
+\mbox{\Hypertarget{class_cjt___clusters_a42111cb252fbea5294c1ef55229a5959}\label{class_cjt___clusters_a42111cb252fbea5294c1ef55229a5959}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Taula\_Distancies\_C@{Taula\_Distancies\_C}}
+\index{Taula\_Distancies\_C@{Taula\_Distancies\_C}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Taula\_Distancies\_C}{Taula\_Distancies\_C}}
+{\footnotesize\ttfamily map$<$string,map $<$string,double$>$ $>$ Cjt\+\_\+\+Clusters\+::\+Taula\+\_\+\+Distancies\+\_\+C\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tenim un map amb les distàncies entre los Clústers. 
+
+
+
+Definición en la línea 30 del archivo Cjt\+\_\+\+Clusters.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cjt___clusters_8hh}{Cjt\+\_\+\+Clusters.\+hh}}\end{DoxyCompactItemize}
